@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій сайт дорам</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1e0533, #2d1b69);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: rgba(0,0,0,0.7);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 0 0 10px #ff6bcb;
+        }
+        .search {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        input {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1em;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            backdrop-filter: blur(10px);
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(255,107,203,0.4);
+        }
+        .card img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        .info {
+            padding: 15px;
+            text-align: center;
+        }
+        .info h3 {
+            margin: 10px 0;
+            font-size: 1.3em;
+        }
+        .btn {
+            display: inline-block;
+            background: #ff6bcb;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #ff4bb5;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            background: rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🍿 Мій сайт дорам</h1>
+        <p>Найкращі корейські, китайські та інші азіатські серіали</p>
+    </header>
+
+    <div class="search">
+        <input type="text" id="searchInput" placeholder="Пошук дорами... (наприклад: Vincenzo, Alchemy of Souls)">
+    </div>
+
+    <div class="container" id="doramaList">
+        <!-- Дорами -->
+        <div class="card">
+            <img src="https://dorama.land/uploads/posts/2024-12/1735234566_vincenzo.jpg" alt="Vincenzo">
+            <div class="info">
+                <h3>Vincenzo</h3>
+                <p>2021 • Корея • Комедія, кримінал</p>
+                <a href="https://dorama.land/vincenzo" target="_blank" class="btn">Дивитися</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://dorama.land/uploads/posts/2024-11/1732987654_alchemy-of-souls.jpg" alt="Alchemy of Souls">
+            <div class="info">
+                <h3>Alchemy of Souls</h3>
+                <p>2022 • Корея • Фентезі, романтика</p>
+                <a href="https://dorama.land/alchemy-of-souls" target="_blank" class="btn">Дивитися</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://dorama.land/uploads/posts/2025-01/1736789123_lovely-runner.jpg" alt="Lovely Runner">
+            <div class="info">
+                <h3>Lovely Runner</h3>
+                <p>2024 • Корея • Романтика, подорож у часі</p>
+                <a href="https://dorama.land/lovely-runner" target="_blank" class="btn">Дивитися</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://dorama.land/uploads/posts/2024-10/1729456789_the-untamed.jpg" alt="The Untamed">
+            <div class="info">
+                <h3>The Untamed (Неукротимый)</h3>
+                <p>2019 • Китай • Фентезі, бойовик</p>
+                <a href="https://dorama.land/the-untamed" target="_blank" class="btn">Дивитися</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://doramatv.one/uploads/posts/2025-01/marriage-contract.jpg" alt="Queen of Tears">
+            <div class="info">
+                <h3>Queen of Tears</h3>
+                <p>2024 • Корея • Романтика, драма</p>
+                <a href="https://dorama.land/queen-of-tears" target="_blank" class="btn">Дивитися</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://dorama.land/uploads/posts/2023-08/1691678901_crash-landing-on-you.jpg" alt="Crash Landing on You">
+            <div class="info">
+                <h3>Crash Landing on You</h3>
+                <p>2019 • Корея • Романтика, комедія</p>
+                <a href="https://dorama.land/crash-landing-on-you" target="_blank" class="btn">Дивитися</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>З любов'ю для фанатів дорам ❤️</p>
+        <p>Якщо хочеш додати свої улюблені — напиши мені!</p>
+    </footer>
+
+    <script>
+        // Простий пошук
+        document.getElementById('searchInput').addEventListener('input', function() {
+            let filter = this.value.toLowerCase();
+            let cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                let title = card.querySelector('h3').textContent.toLowerCase();
+                card.style.display = title.includes(filter) ? 'block' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>
